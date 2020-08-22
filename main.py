@@ -81,4 +81,4 @@ async def on_command_error(ctx, error):
 
 
 #running the bot
-client.run("NzQyNDMzNDc3NjQ3MTM4OTY4.XzGDDg.uq_SdIZ_BAAV3CcINotJ4zIZjS8")
+client.run("token_here")
