@@ -29,6 +29,8 @@ async def on_guild_join(guild):
 async def poll(ctx, txt):
     author = ctx.message.author
     txt = str(txt)
+    
+    await ctx.message.delete()
 
     embed=discord.Embed(color=0xcc0231)
     embed.set_author(name="Poll Bot", url="https://github.com/vanility0104/discord-poll-bot", icon_url="https://images.discordapp.net/avatars/324631108731928587/7dbf4eec7a6c1f7f2d3969a5c7008bb9.png?size=512")
@@ -44,6 +46,8 @@ async def poll(ctx, txt):
 async def suggest(ctx, txt):
     author = ctx.message.author
     txt = str(txt)
+    
+    await ctx.message.delete()
 
     embed=discord.Embed(color=0xcc0231)
     embed.set_author(name="Poll Bot", url="https://github.com/vanility0104/discord-poll-bot", icon_url="https://images.discordapp.net/avatars/324631108731928587/7dbf4eec7a6c1f7f2d3969a5c7008bb9.png?size=512")
